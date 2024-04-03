@@ -7,7 +7,7 @@ $dbname = "formulario";
 $tablename = "cadastro";
 
 // Cria a conexão
-$conn = new mysqli($servername, $username, $password, $dbname, 3308);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verifica a conexão
 if ($conn->connect_error) {
