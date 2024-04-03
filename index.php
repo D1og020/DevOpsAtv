@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $tablename = "cadastro"; // nome da tabela
 
     // Cria a conexão
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($servername, $username, $password, $dbname, 3308);
 
     // Verifica a conexão
     if ($conn->connect_error) {
