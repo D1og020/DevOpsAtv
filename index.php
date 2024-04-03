@@ -1,4 +1,9 @@
 <?php
+// Ativar a exibição de erros do PHP
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 // Verifica se o método de requisição é POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtém os dados do formulário
