@@ -1,14 +1,13 @@
 <?php
 // Configurações de conexão ao banco de dados
-$servername = "127.0.0.1"; // endereço do servidor
-$username = "user_$"; // nome do usuário do MySQL
-$password = "vagrant"; // senha do usuário do MySQL
-$dbname = "formulario"; // nome do banco de dados
-$port = "3308"; // número da porta do MySQL
+$servername = "127.0.0.1"; // endereço do servidor colocar o seu
+$username = ""; // nome do usuário do MySQL
+$password = ""; // senha do usuário do MySQL
+$dbname = ""; // nome do banco de dados
 
 try {
     // Cria uma nova conexão PDO
-    $conn = new PDO("mysql:host=$servername;port=$port;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // Seta o modo de erro do PDO para Exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
