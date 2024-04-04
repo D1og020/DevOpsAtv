@@ -1,6 +1,6 @@
 <?php
 
-$servername = "127.0.0.1";
+$servername = "0"; // colocar o ip da maquina mysql
 $username = "user_%";
 $password = "vagrant";
 $dbname = "formulario";
