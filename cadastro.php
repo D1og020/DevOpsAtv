@@ -1,6 +1,6 @@
 <?php
 // Configurações de conexão ao banco de dados
-$servername = "127.0.0.1";
+$servername = ""; // coloque o ip da maquina mysql  
 $username = "user_%";
 $password = "vagrant";
 $dbname = "formulario";
@@ -12,7 +12,7 @@ $email = $_POST["email"];
 $senha = $_POST["senha"];
 
 // Cria a conexão
-$conn = new mysqli($servername, $username, $password, $dbname, 3308);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verifica a conexão
 if ($conn->connect_error) {
